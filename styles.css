@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(10, 20, 50, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 75vh;
+  border: 2px solid white;
+}
+
+.submain {
+  position: relative;
+}
+
+.IntroPlate {
+  position: relative;
+  animation: 3s linear infinite movingIntroPlate;
+  transform-origin: 40% 50%;
+}
+
+@keyframes movingIntroPlate {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.introBox {
+  position: absolute;
+  width: 10.5vh;
+  height: 7vh;
+  background-color: blue;
+  left: -10vh;
+  top: -8vh;
+  border-radius: 20%;
+  font-size: 70%;
+  color: #fff;
+  padding: 1.4vh 1.4vh;
+}
+
+.introTriangle {
+  position: absolute;
+  top: -1vh;
+  left: -10vh;
+  width: 0;
+  height: 0;
+  border-left: 5vh solid transparent;
+  border-right: 4vh solid blue;
+  border-bottom: 7vh solid transparent;
+  transform: rotate(-20deg);
+}
+
+.head {
+  height: 10vh;
+  width: 14vh;
+  margin-left: 3vh;
+  background-color: white;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face-mask {
+  height: 9vh;
+  width: 13vh;
+  background-color: gray;
+  border-radius: 16px;
+  position: relative;
+}
+
+.eyes {
+  width: 2.5vh;
+  height: 2.5vh;
+  background-color: white;
+  box-shadow: 6vh 0vh white;
+  border-radius: 50%;
+  position: absolute;
+  left: 2.2vh;
+  top: 2vh;
+  position: relative;
+}
+
+.pupils {
+  position: absolute;
+  width: 1.5vh;
+  height: 1.7vh;
+  background-color: black;
+  box-shadow: 6vh 0vh black;
+  border-radius: 50%;
+  left: 0.5vh;
+  top: 0.5vh;
+}
+
+.kitsOnFace {
+  position: absolute;
+  height: 1.5vh;
+  width: 1vh;
+  background-color: white;
+  z-index: 1;
+}
+
+.kitsOnFace1 {
+  left: 15.4vh;
+  top: 1vh;
+  transform: rotate(-30deg);
+}
+
+.kitsOnFace2 {
+  left: 15.4vh;
+  top: 7.6vh;
+  transform: rotate(40deg);
+}
+
+.kitsOnFace3 {
+  left: 3.6vh;
+  top: 1vh;
+  transform: rotate(30deg);
+}
+
+.kitsOnFace4 {
+  left: 3.8vh;
+  top: 7.6vh;
+  transform: rotate(-40deg);
+}
+
+.triangleNose {
+  width: 2vh;
+  height: 4vh;
+  position: absolute;
+  left: 5.5vh;
+  top: 3.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangleNose1 {
+  width: 0.2vh;
+  height: 2vh;
+  background-color: black;
+}
+
+.triangleNose2 {
+  position: absolute;
+  width: 0.2vh;
+  height: 1vh;
+  left: 1.2vh;
+  top: 2.7vh;
+  background-color: black;
+  transform: rotate(-60deg);
+}
+
+.triangleNose3 {
+  position: absolute;
+  width: 0.2vh;
+  height: 1vh;
+  left: 0.6vh;
+  top: 2.7vh;
+  background-color: black;
+  transform: rotate(60deg);
+}
+
+.bulbOnWireOfAntenna {
+  position: absolute;
+  width: 1.3vh;
+  height: 1.3vh;
+  border-radius: 50%;
+  left: 13.06vh;
+  top: -6.8vh;
+}
+
+.wireOfAntenna {
+  position: absolute;
+  width: 0.5vh;
+  height: 5vh;
+  background-color: black;
+  left: 13.4vh;
+  top: -5.5vh;
+}
+
+.baseOnWireOfAntenna {
+  position: absolute;
+  width: 2.3vh;
+  height: 0.5vh;
+  background-color: brown;
+  left: 12.4vh;
+  top: -0.5vh;
+}
+
+.neck {
+  height: 3vh;
+  width: 5vh;
+  background-color: gray;
+  margin-left: 7.5vh;
+}
+
+.left-hand {
+  position: absolute;
+  width: 10vh;
+  height: 1.7vh;
+  top: 19vh;
+  left: 19vh;
+  background-color: white;
+  border-radius: 3px;
+  transform: rotate(-10deg);
+}
+
+.left-hand:before {
+  position: absolute;
+  content: "";
+  width: 10vh;
+  height: 1.7vh;
+  top: -2.2vh;
+  left: 10vh;
+  background-color: white;
+  border-radius: 3px;
+  transform: rotate(-25deg);
+}
+
+.right-hand {
+  position: absolute;
+  width: 10vh;
+  height: 1.7vh;
+  top: 19vh;
+  left: -11vh;
+  background-color: white;
+  border-radius: 3px;
+  transform: rotate(-175deg);
+}
+
+.right-hand:before {
+  position: absolute;
+  content: "";
+  width: 10vh;
+  height: 1.7vh;
+  top: -2.2vh;
+  left: 10vh;
+  background-color: white;
+  border-radius: 3px;
+  transform: rotate(-25deg);
+}
+
+.left-half-hand-connector {
+  position: absolute;
+  width: 2vh;
+  height: 2.5vh;
+  background-color: gray;
+  left: -2vh;
+  top: 19vh;
+  border-bottom-left-radius: 2vh;
+  border-top-left-radius: 2vh;
+}
+
+.right-half-hand-connector {
+  position: absolute;
+  width: 2vh;
+  height: 2.5vh;
+  background-color: transparent;
+  left: 4vh;
+  top: 24vh;
+  box-shadow: 16vh -5vh gray;
+  border-bottom-right-radius: 2vh;
+  border-top-right-radius: 2vh;
+}
+
+.hand-connector {
+  position: absolute;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-color: transparent;
+  border-radius: 50%;
+  left: 1vh;
+  top: 1vh;
+  box-shadow: 35.8vh 10.4vh gray, 26.8vh 16.6vh gray, -13.3vh 17.2vh gray,
+    -23vh 20.6vh gray;
+}
+
+.left-hand-palm {
+  position: relative;
+}
+
+.left-wrist {
+  position: absolute;
+  width: 1vh;
+  height: 2vh;
+  top: -17.6vh;
+  left: -22.5vh;
+  transform: rotate(-25deg);
+  background-color: white;
+}
+
+.right-hand-palm {
+  position: relative;
+}
+
+.right-wrist {
+  position: absolute;
+  width: 1vh;
+  height: 2vh;
+  top: -29.1vh;
+  left: 38.4vh;
+  transform: rotate(-40deg);
+  background-color: white;
+}
+
+.left-palm {
+  position: absolute;
+  width: 2vh;
+  height: 3.5vh;
+  background-color: white;
+  left: -24vh;
+  top: -18vh;
+  transform: rotate(-35deg);
+  border-bottom-right-radius: 2vh;
+  border-top-right-radius: 2vh;
+}
+
+.right-palm {
+  position: absolute;
+  width: 2vh;
+  height: 3.5vh;
+  background-color: white;
+  left: 38.8vh;
+  top: -30.5vh;
+  transform: rotate(-60deg);
+  border-bottom-left-radius: 2vh;
+  border-top-left-radius: 2vh;
+}
+
+.right-hand-fingers {
+  position: absolute;
+  width: 0.7vh;
+  height: 2vh;
+  left: 39.3vh;
+  top: -34.2vh;
+  border-radius: 10px;
+  transform: rotate(30deg);
+  background-color: transparent;
+  box-shadow: 1vh 2vh white, 2.5vh 2vh white, 4vh 2vh white;
+}
+
+.shakingRightHand {
+  position: relative;
+  /*   animation: movingRightHand 3s ease-out; */
+  animation: 1s linear infinite movingRightHand;
+  transform-origin: 20% 100%;
+}
+
+@keyframes movingRightHand {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0.5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.left-hand-fingers {
+  position: absolute;
+  width: 0.7vh;
+  height: 2vh;
+  left: -24.4vh;
+  top: -19.5vh;
+  border-radius: 10px;
+  transform: rotate(55deg);
+  background-color: transparent;
+  box-shadow: 1vh 2vh white, 2.5vh 2vh white, 4vh 2vh white;
+}
+
+.body {
+  height: 27vh;
+  width: 20vh;
+  background-color: white;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-mask {
+  position: relative;
+  height: 26vh;
+  width: 19vh;
+  background-color: gray;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.nameOfTheBotOnBodyMask {
+  position: absolute;
+  left: 1.1vh;
+  top: 2.9vh;
+  color: orange;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.3vh;
+}
+
+.kitsOnBody {
+  position: absolute;
+  height: 1.5vh;
+  width: 1vh;
+  background-color: white;
+  z-index: 2;
+}
+
+.kitsOnBody1 {
+  left: 18.2vh;
+  top: 14vh;
+  transform: rotate(-30deg);
+}
+
+.kitsOnBody2 {
+  left: 18vh;
+  top: 37.5vh;
+  transform: rotate(40deg);
+}
+
+.kitsOnBody3 {
+  left: 0.8vh;
+  top: 14vh;
+  transform: rotate(30deg);
+}
+
+.kitsOnBody4 {
+  left: 0.8vh;
+  top: 37.5vh;
+  transform: rotate(-40deg);
+}
+
+.screenOnBodyMask {
+  position: absolute;
+  width: 9vh;
+  height: 7vh;
+  background-color: white;
+  left: 0.7vh;
+  top: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screenOnBodyMask:before {
+  content: "";
+  position: absolute;
+  width: 8.3vh;
+  height: 6.3vh;
+  border-radius: 1vh;
+  background-color: black;
+}
+
+.buttonsOnBodyMask {
+  position: absolute;
+  width: 1vh;
+  height: 1vh;
+  background-color: transparent;
+  left: 1.2vh;
+  top: 14vh;
+  border-radius: 50%;
+  box-shadow: 1.5vh 0vh black, 3vh 0vh black, 4.5vh 0vh black, 6vh 0vh black,
+    1.5vh 1.5vh black, 3vh 1.5vh black, 4.5vh 1.5vh black, 6vh 1.5vh black,
+    1.5vh 3vh black, 3vh 3vh black, 4.5vh 3vh black, 6vh 3vh black,
+    1.5vh 4.5vh black, 3vh 4.5vh black, 4.5vh 4.5vh black, 6vh 4.5vh black;
+}
+
+.bulbOnBodyMask {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6.5vh 0 6.5vh;
+}
+
+.bulb {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 1.8vh;
+  height: 1.8vh;
+  border-radius: 50%;
+  top: 8.3vh;
+  left: 5vh;
+}
+
+.bulb.yellow {
+  background-color: #f1c40f;
+  box-shadow: 0 0 20px 5px #f1c40f;
+}
+
+.bulb.red {
+  background-color: #c0392b;
+  box-shadow: 0 0 20px 5px #c0392b;
+}
+
+.bulb.green {
+  background-color: #2ecc71;
+  box-shadow: 0 0 20px 5px #2ecc71;
+}
+
+.penDriveOnBodyMask {
+  position: absolute;
+  width: 2vh;
+  height: 0.8vh;
+  background-color: black;
+  left: 13vh;
+  top: 16vh;
+}
+
+.legs {
+  height: 7vh;
+  width: 2.5vh;
+  background-color: transparent;
+  box-shadow: 5.4vh -0.1vh gray, 12.2vh -0.1vh gray;
+  border-radius: 0 0 10px 10px;
+}
+
+.tyre {
+  position: absolute;
+  height: 10vh;
+  width: 6vh;
+  background-color: black;
+  border-radius: 16px;
+  top: 41.4vh;
+  left: 7.1vh;
+}
+
+.tyre:before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 10vh;
+  background-color: gray;
+  left: 2.73vh;
+}
